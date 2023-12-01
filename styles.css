@@ -98,7 +98,24 @@ nav a {
     color: #666;
     margin: 10px 0;
 }
-
+/* Define the animation */
+@keyframes slide {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(200px); /* Adjust distance as needed */
+    }
+  }
+  
+  /* Apply the animation to the video element */
+  .animated-video {
+    animation-name: slide;
+    animation-duration: 3s; /* Set the duration of the animation */
+    animation-iteration-count: infinite; /* Make it loop */
+    animation-timing-function: ease-in-out; /* Adjust timing as needed */
+  }
+  
 /* Latest Posts section */
 .latest-posts {
     display: flex;
